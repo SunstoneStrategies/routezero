@@ -1,4 +1,4 @@
-import React from 'react';
+import {   useRef,React } from "react";
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
@@ -19,6 +19,7 @@ const usaBounds = {
 };
 
 function GoogleMapComponent() {
+    const mapRef = useRef();
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: 'AIzaSyDvkZLKyCoZv0xfrNGGF-bSYQ5Hk0J7aEU',
@@ -27,12 +28,7 @@ function GoogleMapComponent() {
 
   const [map, setMap] = React.useState(null);
 
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-
-    setMap(map);
-  }, []);
+  const onLoad = React.useCallback( (map)=>(mapRef.current=map ) , []);
 
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null);
@@ -43,6 +39,8 @@ function GoogleMapComponent() {
     zoomControl: false,
     streetViewControl: false,
     fullscreenControl: false,
+    disabledDefaultUI:true,
+    
     restriction: {
       latLngBounds: usaBounds,
       strictBounds: false,
@@ -52,8 +50,9 @@ function GoogleMapComponent() {
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
-      center={center}
-      zoom={2}
+      
+      center={usaBounds}
+      zoom={10}
       options={options}
       onLoad={onLoad}
       onUnmount={onUnmount}
@@ -62,4 +61,4 @@ function GoogleMapComponent() {
   ) : <></>;
 }
 
-export default React.memo(GoogleMapComponent);
+export default  GoogleMapComponent ;
