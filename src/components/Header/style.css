@@ -1,0 +1,10 @@
+
+.hero-image {
+  background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/rk.png");
+  background-color: #cb6161cc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
