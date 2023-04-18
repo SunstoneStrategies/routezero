@@ -1,0 +1,12 @@
+.sliderDiv1{
+    background-image: url("./Images/carr.png");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative; 
+}
+
+.bgD{
+    padding: 20px; 
+}

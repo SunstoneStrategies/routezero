@@ -1,6 +1,6 @@
 import "./App.css";
 // import Header from "./components/Header";
-// import Slider from "./components/Slider/Slider";
+import Slider from "./components/Slider/Slider";
 // import Banner from "./components/Banner/Banner";
 import GoogleMapComponent from "./components/GoogleMap/GoogleMapComponent";
 import Clients from "./components/Clients/Clients";
@@ -33,7 +33,7 @@ function App() {
       <Banner />
       <GoogleMapComponent />
       <Clients /> */}
-      
+      <Slider />
       <GoogleMapComponent />
       <Clients />
       <div
