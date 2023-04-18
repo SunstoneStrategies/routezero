@@ -1,10 +1,74 @@
-
 .hero-image {
-  background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/rk.png");
-  background-color: #cb6161cc;
-  height: 500px;
+  background-image: url("./Images/BGBG.png");
+  height: 90vh;
+  width: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.sub-hero-image {
+  background-image: url("./Images/route.png");
+  height: 70vh;
+  width: 50vh;
+  top: 170px;
+  right: -220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.text1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 7rem;
+  font-weight: bold;
+  color: #689DAA;
+  line-height: 1em;
+}
+
+.divCon {
+  width: 70vh;
+  position: relative;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; 
+  right: 2px;
+  right: -110px;
+  font-family: 'Poppins', sans-serif;
+  transform: translate(600px);
+  /* adjust the X value to move left or right */
+  font-size: 12rem;
+  font-weight: bold;
+  color: #689DAA;
+  line-height: 1em;
+}
+
+.inline-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.container {
+  width: 33.33%;
+  border-radius: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(255, 162, 0);
+  font-weight: bold;
+
+}
+
+.text2 {
+  position: relative;
+  margin: 0;
+  top: 5%;
+  right: -110px;
+  font-family: 'Poppins', sans-serif;
+  transform: translate(905px, -270px);
+  font-size: 2.8rem;
+  color: #BBBBBB;
+  text-align: right;
+  line-height: 1.5em;
+  width: 33.33%;
 }
