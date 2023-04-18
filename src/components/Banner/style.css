@@ -1,0 +1,38 @@
+.logoclass {
+    background-image: url('./Images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20vh;
+    height: 15vh;
+
+}
+
+.titleclass {
+    width: 35vh;
+    font-family: 'Poppins', sans-serif;
+
+    height: 15vh;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titletext {
+    color: #FFA800;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+
+}
+.subtitletext {
+    color: #689DAA;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+
+}

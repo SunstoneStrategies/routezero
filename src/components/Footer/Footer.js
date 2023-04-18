@@ -35,10 +35,10 @@ export default function Footer() {
           }}
         >
           <div>
-            <h3 style={{ color: "white", textAlign: "center" ,  fontFamily: 'Poppins',  }}>
+            <h4 style={{ color: "white", textAlign: "center" ,  fontFamily: 'Poppins',  }}>
               Want to learn more about Route Zero and find out if we’re <br /> going to
               be cruising through a city near you?
-            </h3>
+            </h4>
             <div
               style={{
                 display: "flex",
@@ -64,7 +64,7 @@ export default function Footer() {
         className="blockquote-footer"
         style={{ textAlign: "center", marginTop: "5vh", marginBottom: "15vh" }}
       >
-        Route Zero Relay © 2023 . All rights reserved
+        <h5>Route Zero Relay © 2023 . All rights reserved</h5>
       </footer>
      </>
   )
