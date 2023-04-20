@@ -8,7 +8,7 @@ export default function Header() {
         <div className="sub-hero-image">
           <div className="divCon">
             <h1 className="text1">
-              Route Zero
+              ROUTE ZERO
               <br />
               <div className="inline-container">
                 <span>Relay</span>

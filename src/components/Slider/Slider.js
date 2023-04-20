@@ -12,14 +12,14 @@ export default function Slider() {
           <div className="sliderDiv1"></div>
         </Col>
 
-        <Col>
+        <Col className="text-center">
           <Carousel>
             <Carousel.Item>
               <div
                 style={{
                   backgroundColor: "#689DAA",
-                  borderRadius: "10px",
-                  padding: "50px",
+                  borderRadius: "20px",
+                  padding: "10px",
                   height: "40vh",
                   color: "#FFFFFF",
                 }}
@@ -35,9 +35,9 @@ export default function Slider() {
             <Carousel.Item>
               <div
                 style={{
-                  backgroundColor: "#689DAA",
+                  backgroundColor: "#669DA6",
                   borderRadius: "10px",
-                  padding: "50px",
+                  padding: "10px",
                   height: "40vh",
                   color: "#FFFFFF",
                 }}
@@ -58,7 +58,7 @@ export default function Slider() {
                 style={{
                   backgroundColor: "#689DAA",
                   borderRadius: "10px",
-                  padding: "50px",
+                  padding: "10px",
                   height: "40vh",
                   color: "#FFFFFF",
                 }}

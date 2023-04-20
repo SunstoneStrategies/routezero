@@ -7,7 +7,8 @@ import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Banner from "./components/Banner/Banner";
 
- 
+import UsMap from "./components/Map/UsMap";
+
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
       <Header />
       <Slider />
       <Banner/>
-      <GoogleMap />
+      <UsMap />
       <Clients />
       <Footer/>
+      
      
     </div>
   );
