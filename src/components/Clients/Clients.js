@@ -5,7 +5,12 @@ export default function Clients() {
   return (
     <>
       <div>
-        <div className="spon">SPONSORED BY:</div>
+        <div
+          className="spon"
+          
+        >
+          SPONSORED BY:
+        </div>
         <Grid
           container
           bgcolor="#FFFFFF"
@@ -41,14 +46,12 @@ export default function Clients() {
             <Box className="image8" my={5} p={5}></Box>
           </Grid>
 
-          <Grid item xs={3}>
-            <Box className="image9" my={5} p={5}></Box>
-          </Grid>
+         
 
           <Grid item xs={2.4}>
             <Box className="image10" my={5} p={5}></Box>
           </Grid>
-
+         
           <Grid item xs={2.4}>
             <Box className="image11" my={5} p={5}></Box>
           </Grid>
@@ -59,6 +62,9 @@ export default function Clients() {
 
           <Grid item xs={2.4}>
             <Box className="image13" my={5} p={5}></Box>
+          </Grid>
+          <Grid item xs={2}>
+            <Box className="image9" my={5} p={5}></Box>
           </Grid>
 
           <Grid item xs={2.4}>
