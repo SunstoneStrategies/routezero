@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CityInfoCard from './CityInfoCard'
+import CityInfoCard from "./CityInfoCard";
 import {
   ComposableMap,
   Geographies,
@@ -19,18 +19,52 @@ const containerStyle = {
 };
 
 export default function UsMap() {
-  const [hoveredState, setHoveredState] = useState(false);
-
-  const handleStateEnter = () => {
-    setHoveredState(true);
-  };
+  const [hoveredState, setHoveredState] = useState("");
+  const coordinatedData = [
+    {
+      coordinates: [-79.995888, 40.440624],
+      state: "Pittsburgh, Pennsylvania",
+    },
+    {
+      coordinates: [-76.609383, 39.299236],
+      state: "Baltimore, Maryland",
+    },
+    {
+      coordinates: [-77.007507, 38.900497],
+      state: "Washington, DC",
+    },
+    {
+      coordinates: [-83.045753, 42.331429],
+      state: "Detroit, Michigan",
+    },
+    {
+      coordinates: [-118.243683, 34.052235],
+      state: "Los Angeles, CA",
+    },
+    {
+      coordinates: [-111.651299, 35.198284],
+      state: "Flagstaff, Arizona",
+    },
+    {
+      coordinates: [-105.944183, 35.691544],
+      state: "Santa Fe, NM",
+    },
+    {
+      coordinates: [-94.578331, 39.099724],
+      state: "Kansas City, MO",
+    },
+    {
+      coordinates: [-88.150558, 41.520557],
+      state: "Joliet, IL",
+    },
+  ];
   const handleStateLeave = () => {
-    setHoveredState(false);
+    setHoveredState("");
   };
 
   return (
     <div style={containerStyle}>
-      <ComposableMap projection="geoAlbersUsa" viewBox="-250 0 1260 600">
+      <ComposableMap projection="geoAlbersUsa" viewBox="-150 0 1100 600">
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
             geographies.map((geo) => (
@@ -60,15 +94,23 @@ export default function UsMap() {
             ))
           }
         </Geographies>
-        <Marker
-          coordinates={[-74.006, 40.7128]}
-          onMouseEnter={handleStateEnter}
-          onMouseLeave={handleStateLeave}
-        >
-          <circle r={8} fill="#F53" />
-        </Marker>
+
+        {coordinatedData &&
+          coordinatedData.map(({ state, coordinates }) => (
+            <Marker
+              key={state}
+              coordinates={coordinates}
+              onMouseEnter={() => {
+                setHoveredState(state);
+                console.log("aubair", hoveredState);
+              }}
+              onMouseLeave={handleStateLeave}
+            >
+              <circle r={8} fill="#F53" />
+            </Marker>
+          ))}
       </ComposableMap>
-      {hoveredState && <CityInfoCard/>}
+      {hoveredState !== "" ? <CityInfoCard /> : <div></div>}
     </div>
   );
 }
