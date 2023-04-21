@@ -23,17 +23,17 @@ export default function Footer() {
                   backgroundColor: "#FFA800",
                   height: "60px",
                   width: "200px",
-                  borderRadius: "20px", marginTop: "140px" 
+                  borderRadius: "20px", marginTop: "80px" 
                 }}
                 sx={{ height: "60px", width: "200px" ,fontWeight:"bold"}}
               >
                 Email Us!
               </Button>
             </div>
-            <h4 className="text" style={{ marginTop: "20px" ,fontWeight:"bold"}}>
+            <h5 className="text" style={{ marginTop: "20px" ,fontWeight:"500"}}>
               Want to learn more about Route Zero and find out if we’re <br />{" "}
               going to be cruising through a city near you?
-            </h4>
+            </h5>
           </div>
         </div>
         <footer className="footer">
