@@ -1,74 +1,166 @@
-.hero-image {
+ 
+.fcontainer {
+  position: relative; /* set position to relative so that ::before can be positioned absolutely */
   background-image: url("./Images/BGBG.png");
-  height: 90vh;
-  width: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  z-index: 1; /* set a higher z-index value */
 }
 
-.sub-hero-image {
+.fcontainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black color */
+  z-index: -2; /* position behind the fcontainer */
+}
+
+.fitem {
+  /* border: 2px solid black;
+  margin: 35px; */
+}
+
+
+
+.item2 {
+  width: 45%;
+  height: 430px;
   background-image: url("./Images/route.png");
-  height: 70vh;
-  width: 50vh;
-  top: 170px;
-  right: -220px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: contain;
+
+
 }
+
+.item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 330px;
+}
+
+.item1Child1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  /* background-color: rgb(220, 143, 143); */
+
+}
+
+.item1-child1-kid1 {
+  align-self: center;
+  width: 100%;
+  height: 60px;
+  /* background-color: rgb(27, 5, 92); */
+}
+
+.item1-child1-kid2 {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  /* background-color: rgb(116, 8, 8); */
+}
+.item1text2text1 {
+
+ color: #FFFFFF;
+ text-align: left;
+ width: 45%;
+ font-weight: bold;
+ font-size: 3.7rem;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.rounded-div {
+  border-radius: 20px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+  background-color: #669DA6;
+}
+
+.centered-text {
+ padding-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+ 
 
 .text1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 7rem;
+
+  color: #FFFFFF;
+  text-align: left;
+  width: 100%;
   font-weight: bold;
-  color: #689DAA;
-  line-height: 1em;
+  font-size: 3.7rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.divCon {
-  width: 70vh;
-  position: relative;
-  margin: 0;
-  font-family: 'Poppins', sans-serif; 
-  right: 2px;
-  right: -110px;
-  font-family: 'Poppins', sans-serif;
-  transform: translate(600px);
-  /* adjust the X value to move left or right */
-  font-size: 12rem;
-  font-weight: bold;
-  color: #689DAA;
-  line-height: 1em;
-}
 
-.inline-container {
-  display: inline-flex;
-  align-items: center;
-}
 
-.container {
-  width: 33.33%;
-  border-radius: 40px;
-  font-size: 20px;
-  color: white;
-  background-color: rgb(255, 162, 0);
+
+
+
+
+.item1Child2 {
+  width: 100%;
+  height: 130px;
   font-weight: bold;
 
 }
 
 .text2 {
-  position: relative;
-  margin: 0;
-  top: 5%;
-  right: -110px;
-  font-family: 'Poppins', sans-serif;
-  transform: translate(905px, -270px);
-  font-size: 2.8rem;
-  color: #BBBBBB;
-  text-align: right;
-  line-height: 1.5em;
-  width: 33.33%;
+
+  color: #FFFFFF;
+  text-align: left;
+  width: 100%;
+  font-family: 'Cooper Hewitt' sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
 }
+
+
+.item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35%;
+  height: 330px;
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 

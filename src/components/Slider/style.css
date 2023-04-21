@@ -5,8 +5,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: relative; 
+    background-color: #f3e9b4;;
 }
 
 .bgD{
     padding: 20px; 
+    background-color: #f3e9b4;;
+
 }

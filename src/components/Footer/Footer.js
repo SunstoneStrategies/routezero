@@ -1,44 +1,14 @@
-import React from 'react'
+import React from "react";
 import { Card, CardContent, Button, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import "./style.css";
 
 export default function Footer() {
   return (
-     <>
-      <div
-        className=""
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "5vh",
-          marginBottom: "5vh",
-
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <div
-          className="card"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "5vh",
-            marginBottom: "5vh",
-            flexDirection: "column",
-            alignItems: "center",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            borderRadius: "20px",
-            overflow: "hidden", 
-            width: "90%",
-            height: "30vh",
-          }}
-        >
+    <>
+      <div className="containerDiv">
+        <div className="carddiv">
           <div>
-            <h4 style={{ color: "white", textAlign: "center" ,  fontFamily: 'Poppins',  }}>
-              Want to learn more about Route Zero and find out if we’re <br /> going to
-              be cruising through a city near you?
-            </h4>
             <div
               style={{
                 display: "flex",
@@ -49,23 +19,27 @@ export default function Footer() {
               <Button
                 variant="contained"
                 color="secondary"
-                style={{ backgroundColor: "#FFA800", height: "60px", width: "200px" ,borderRadius: "20px"}}
-                sx={{ height: "60px", width: "200px" }}
-                
+                style={{
+                  backgroundColor: "#FFA800",
+                  height: "60px",
+                  width: "200px",
+                  borderRadius: "20px", marginTop: "140px" 
+                }}
+                sx={{ height: "60px", width: "200px" ,fontWeight:"bold"}}
               >
                 Email Us!
               </Button>
             </div>
+            <h4 className="text" style={{ marginTop: "20px" ,fontWeight:"bold"}}>
+              Want to learn more about Route Zero and find out if we’re <br />{" "}
+              going to be cruising through a city near you?
+            </h4>
           </div>
         </div>
+        <footer className="footer">
+          Route Zero Relay © 2023 . All rights reserved
+        </footer>
       </div>
-
-      <footer
-        className="blockquote-footer"
-        style={{ textAlign: "center", marginTop: "5vh", marginBottom: "15vh" }}
-      >
-        <h5>Route Zero Relay © 2023 . All rights reserved</h5>
-      </footer>
-     </>
-  )
+    </>
+  );
 }
