@@ -18,15 +18,15 @@ export default function Clients() {
           p={5}
           sx={{ marginTop: "-20px" }}
         >
-          <Grid item xs={2.4}>
+          <Grid item xs={3}>
             <Box className="image1" my={5} p={5}></Box>
           </Grid>
-          <Grid item xs={2.4}>
+          <Grid item xs={3}>
             <Box className="image2" my={5} p={5}></Box>
           </Grid>
-          <Grid item xs={2.4}>
+          {/* <Grid item xs={2.4}>
             <Box className="image3" my={5} p={5}></Box>
-          </Grid>
+          </Grid> */}
           <Grid item xs={2.4}>
             <Box className="image4" my={5} p={5}></Box>
           </Grid>

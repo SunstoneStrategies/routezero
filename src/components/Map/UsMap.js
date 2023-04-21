@@ -25,10 +25,10 @@ export default function UsMap() {
       coordinates: [-79.995888, 40.440624],
       state: "Pittsburgh, Pennsylvania",
     },
-    {
-      coordinates: [-76.609383, 39.299236],
-      state: "Baltimore, Maryland",
-    },
+    // {
+    //   coordinates: [-76.609383, 39.299236],
+    //   state: "Baltimore, Maryland",
+    // },
     {
       coordinates: [-77.007507, 38.900497],
       state: "Washington, DC",
@@ -41,22 +41,22 @@ export default function UsMap() {
       coordinates: [-118.243683, 34.052235],
       state: "Los Angeles, CA",
     },
-    {
-      coordinates: [-111.651299, 35.198284],
-      state: "Flagstaff, Arizona",
-    },
-    {
-      coordinates: [-105.944183, 35.691544],
-      state: "Santa Fe, NM",
-    },
+    // {
+    //   coordinates: [-111.651299, 35.198284],
+    //   state: "Flagstaff, Arizona",
+    // },
+    // {
+    //   coordinates: [-105.944183, 35.691544],
+    //   state: "Santa Fe, NM",
+    // },
     {
       coordinates: [-94.578331, 39.099724],
       state: "Kansas City, MO",
     },
-    {
-      coordinates: [-88.150558, 41.520557],
-      state: "Joliet, IL",
-    },
+    // {
+    //   coordinates: [-88.150558, 41.520557],
+    //   state: "Joliet, IL",
+    // },
   ];
   const handleStateLeave = () => {
     setHoveredState("");
@@ -74,10 +74,6 @@ export default function UsMap() {
                 fill="#4C7A81"
                 stroke="#f3e9b4"
                 strokeWidth={2}
-                // onMouseEnter={() => {
-                //   setHoveredState(geo.properties);
-                // }}
-                // onMouseLeave={handleStateLeave}
                 style={{
                   default: {
                     fill: "#4C7A81",
@@ -101,8 +97,7 @@ export default function UsMap() {
               key={state}
               coordinates={coordinates}
               onMouseEnter={() => {
-                setHoveredState(state);
-                console.log("aubair", hoveredState);
+                setHoveredState(state); 
               }}
               onMouseLeave={handleStateLeave}
             >
@@ -110,7 +105,11 @@ export default function UsMap() {
             </Marker>
           ))}
       </ComposableMap>
-      {hoveredState !== "" ? <CityInfoCard /> : <div></div>}
+      {hoveredState !== "" ? (
+        <CityInfoCard state={hoveredState} />
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 }
