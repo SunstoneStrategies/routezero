@@ -62,18 +62,19 @@ export default function CityInfoCard(props) {
       },
     ],
   };
-  const WashingtonDC={
-     stations : [
-        {
-             title : "Washington, DC",
-             description : "The culmination of the Route Zero Relay trip across the country, will be at EPA headquarters in DC where we will deliver comments from people all across the country who want the strongest standards possible to put us on the route to Zero Emissions!"
-        } 
-    ]
-  }
+  const WashingtonDC = {
+    stations: [
+      {
+        title: "Washington, DC",
+        description:
+          "The culmination of the Route Zero Relay trip across the country, will be at EPA headquarters in DC where we will deliver comments from people all across the country who want the strongest standards possible to put us on the route to Zero Emissions!",
+      },
+    ],
+  };
   return props.state === "Los Angeles, CA" ? (
     <div
       className="card-container d-flex flex-wrap"
-      style={{ position: "absolute" }}
+      style={{ position: "absolute", transform: "translate(50%, 10px)" }}
     >
       {LosAngelesCA.stations.length === 1 ? (
         <div
@@ -82,11 +83,13 @@ export default function CityInfoCard(props) {
         >
           <img className="card-img-top" src={LALogo} alt="carddetail" />
           <div className="card-body">
-            <h5 className="card-title" style={{ color: "#E89725" }}>{LosAngelesCA.stations[0].title}</h5>
+            <h5 className="card-title" style={{ color: "#E89725" }}>
+              {LosAngelesCA.stations[0].title}
+            </h5>
             <p className="card-text">{LosAngelesCA.stations[0].description}</p>
             <a
               href="/"
-              className="btn btn-primary"
+              className="btn  "
               style={{ display: "block", margin: "auto" }}
             >
               Learn more
@@ -137,7 +140,7 @@ export default function CityInfoCard(props) {
             </div>
             <a
               href="/"
-              className="btn btn-secondary"
+              className="btn btn-primary"
               style={{ margin: "20px", backgroundColor: "#E89725" }}
             >
               Learn more
@@ -156,9 +159,15 @@ export default function CityInfoCard(props) {
           className="card  "
           style={{ flex: "0 0 auto", margin: "10px", maxWidth: "400px" }}
         >
-          <img className="card-img-top bgimageKC" src={KCLogo} alt="carddetail" />
+          <img
+            className="card-img-top bgimageKC"
+            src={KCLogo}
+            alt="carddetail"
+          />
           <div className="card-body">
-            <h5 className="card-title" style={{ color: "#E89725" }}>{KansasCityMO.stations[0].title}</h5>
+            <h5 className="card-title" style={{ color: "#E89725" }}>
+              {KansasCityMO.stations[0].title}
+            </h5>
             <p className="card-text">{KansasCityMO.stations[0].description}</p>
             <a
               href="/"
@@ -230,18 +239,31 @@ export default function CityInfoCard(props) {
       {DetroitMichigan.stations.length === 1 ? (
         <div
           className="card "
-          style={{ flex: "0 0 auto", margin: "10px", maxWidth: "400px" }}
+          style={{
+            flex: "0 0 auto",
+            margin: "10px",
+            maxWidth: "350px",
+            padding: "10px",
+            borderRadius: "20px",
+          }}
         >
           <img className="card-img-top" src={DMLogo} alt="carddetail" />
           <div className="card-body">
-            <h5 className="card-title" style={{ color: "#E89725" }}>{DetroitMichigan.stations[0].title}</h5>
+            <h5 className="card-title" style={{ color: "#E89725" }}>
+              {DetroitMichigan.stations[0].title}
+            </h5>
             <p className="card-text">
               {DetroitMichigan.stations[0].description}
             </p>
             <a
               href="/"
               className="btn btn-primary"
-              style={{ display: "block", marginLeft: "100px",marginRight:"100px" ,backgroundColor:"#E89725"}}
+              style={{
+                display: "block",
+                marginLeft: "70px",
+                marginRight: "70px",
+                backgroundColor: "#E89725",
+              }}
             >
               Learn more
             </a>
@@ -312,7 +334,9 @@ export default function CityInfoCard(props) {
         >
           <img className="card-img-top" src={PPLogo} alt="carddetail" />
           <div className="card-body">
-            <h5 className="card-title" style={{ color: "#E89725" }}>{PittsburghPennsylvania.stations[0].title}</h5>
+            <h5 className="card-title" style={{ color: "#E89725" }}>
+              {PittsburghPennsylvania.stations[0].title}
+            </h5>
             <p className="card-text">
               {PittsburghPennsylvania.stations[0].description}
             </p>
@@ -378,7 +402,7 @@ export default function CityInfoCard(props) {
         </>
       )}
     </div>
-  )  : props.state === "Washington, DC" ?(
+  ) : props.state === "Washington, DC" ? (
     <div
       className="card-container d-flex flex-wrap"
       style={{ position: "absolute", transform: "translate(-50%, 10px)" }}
@@ -386,18 +410,29 @@ export default function CityInfoCard(props) {
       {WashingtonDC.stations.length === 1 ? (
         <div
           className="card"
-          style={{ flex: "0 0 auto", margin: "10px", maxWidth: "400px" }}
+          style={{
+            flex: "0 0 auto",
+            margin: "10px",
+            maxWidth: "350px",
+            padding: "10px",
+            borderRadius: "20px",
+          }}
         >
           <img className="card-img-top" src={WDLogo} alt="carddetail" />
           <div className="card-body">
-            <h5 className="card-title" style={{color:"#E89725"}}>{WashingtonDC.stations[0].title}</h5>
-            <p className="card-text">
-              {WashingtonDC.stations[0].description}
-            </p>
+            <h5 className="card-title" style={{ color: "#E89725" }}>
+              {WashingtonDC.stations[0].title}
+            </h5>
+            <p className="card-text">{WashingtonDC.stations[0].description}</p>
             <a
               href="/"
               className="btn btn-primary"
-              style={{ display: "block", margin: "auto", marginLeft: "100px",marginRight:"100px" ,backgroundColor:"#E89725" }}
+              style={{
+                display: "block",
+                marginLeft: "70px",
+                marginRight: "70px",
+                backgroundColor: "#E89725",
+              }}
             >
               Learn more
             </a>
@@ -456,7 +491,7 @@ export default function CityInfoCard(props) {
         </>
       )}
     </div>
-  ): (
+  ) : (
     <div></div>
   );
 }

@@ -23,14 +23,14 @@ export default function Footer() {
                   backgroundColor: "#FFA800",
                   height: "60px",
                   width: "200px",
-                  borderRadius: "20px",
+                  borderRadius: "20px", marginTop: "140px" 
                 }}
-                sx={{ height: "60px", width: "200px" }}
+                sx={{ height: "60px", width: "200px" ,fontWeight:"bold"}}
               >
                 Email Us!
               </Button>
             </div>
-            <h4 className="text">
+            <h4 className="text" style={{ marginTop: "20px" ,fontWeight:"bold"}}>
               Want to learn more about Route Zero and find out if we’re <br />{" "}
               going to be cruising through a city near you?
             </h4>

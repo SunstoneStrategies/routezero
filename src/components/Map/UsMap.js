@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import CityInfoCard from "./CityInfoCard";
+import { SVGImageElement } from "react";
 import {
   ComposableMap,
   Geographies,
   Geography,
   Marker,
+  Line,
 } from "react-simple-maps";
 const geoUrl =
   "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/united-states/us-albers.json";
@@ -20,6 +22,13 @@ const containerStyle = {
 
 export default function UsMap() {
   const [hoveredState, setHoveredState] = useState("");
+  const trailCoords = [
+    [-118.243683, 34.052235],
+    [-94.578331, 39.099724],
+    [-83.045753, 42.331429],
+    [-79.995888, 40.440624],
+    [-77.007507, 38.900497],
+  ];
   const coordinatedData = [
     {
       coordinates: [-79.995888, 40.440624],
@@ -62,9 +71,15 @@ export default function UsMap() {
     setHoveredState("");
   };
 
-  return (
+  return geoUrl !== "" ? (
     <div style={containerStyle}>
-      <ComposableMap projection="geoAlbersUsa" viewBox="-150 0 1100 600">
+      <ComposableMap
+        projection="geoAlbersUsa"
+        projectionConfig={{
+          scale: 700,
+        }}
+      >
+        {/* <ComposableMap projection="geoAlbersUsa" viewBox="-150 0 1100 600"> */}
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
             geographies.map((geo) => (
@@ -90,18 +105,33 @@ export default function UsMap() {
             ))
           }
         </Geographies>
-
+        <Line
+          coordinates={trailCoords}
+          stroke="black"
+          strokeWidth={2}
+          strokeDasharray="9 9"
+        />
         {coordinatedData &&
           coordinatedData.map(({ state, coordinates }) => (
             <Marker
               key={state}
               coordinates={coordinates}
               onMouseEnter={() => {
-                setHoveredState(state); 
+                setHoveredState(state);
               }}
               onMouseLeave={handleStateLeave}
             >
-              <circle r={8} fill="#F53" />
+              <g
+                fill="white"
+                stroke="black"
+                strokeWidth="3"
+                strokeLinecap="butt"
+                strokeLinejoin="miter"
+                transform="translate(-12, -24)"
+              >
+                <circle cx="12" cy="10" r="3" />
+                <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
+              </g>
             </Marker>
           ))}
       </ComposableMap>
@@ -111,5 +141,7 @@ export default function UsMap() {
         <div></div>
       )}
     </div>
+  ) : (
+    <div>Loading...</div>
   );
 }
