@@ -1,119 +1,126 @@
- 
-.fcontainer {
-  position: relative; /* set position to relative so that ::before can be positioned absolutely */
-  background-image: url("./Images/BGBG.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-  z-index: 1; /* set a higher z-index value */
-}
+ .fcontainer {
+   position: relative;
+   /* set position to relative so that ::before can be positioned absolutely */
+   background-image: url("./Images/BGBG.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+   z-index: 1;
+   /* set a higher z-index value */
+ }
 
-.fcontainer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black color */
-  z-index: -2; /* position behind the fcontainer */
-}
+ .fcontainer::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.5);
+   /* semi-transparent black color */
+   z-index: -2;
+   /* position behind the fcontainer */
+ }
 
-.fitem {
-  /* border: 2px solid black;
+ .fitem {
+   /* border: 2px solid black;
   margin: 35px; */
-}
+ }
 
 
 
-.item2 {
-  width: 45%;
-  height: 430px;
-  background-image: url("./Images/route.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+ .item2 {
+  
+   background-image: url("./Images/route.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 35%;
+   height: 330px;
+ }
+
+ .item1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 40%;
+   height: 330px;
+ }
+
+ .item1Child1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   height: 200px;
+   /* background-color: rgb(220, 143, 143); */
+
+ }
+
+ .item1-child1-kid1 {
+   align-self: center;
+   width: 100%;
+   height: 60px;
+   /* background-color: rgb(27, 5, 92); */
+ }
+
+ .item1-child1-kid2 {
+   width: 100%;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   /* background-color: rgb(116, 8, 8); */
+ }
+
+ .item1text2text1 {
+
+   color: #FFFFFF;
+   text-align: left;
+   width: 45%;
+   font-weight: bold;
+   font-size: 3.7rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .rounded-div {
+   border-radius: 20px;
+   width: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   height: 50px;
+   background-color: #669DA6;
+ }
+
+ .centered-text {
+   padding-top: 10px;
+   font-size: 30px;
+   font-weight: bold;
+   color: #FFFFFF;
+ }
 
 
-}
+ .text1 {
 
-.item1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 40%;
-  height: 330px;
-}
-
-.item1Child1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 200px;
-  /* background-color: rgb(220, 143, 143); */
-
-}
-
-.item1-child1-kid1 {
-  align-self: center;
-  width: 100%;
-  height: 60px;
-  /* background-color: rgb(27, 5, 92); */
-}
-
-.item1-child1-kid2 {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  /* background-color: rgb(116, 8, 8); */
-}
-.item1text2text1 {
-
- color: #FFFFFF;
- text-align: left;
- width: 45%;
- font-weight: bold;
- font-size: 3.7rem;
- font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.rounded-div {
-  border-radius: 20px;
-  width: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 50px;
-  background-color: #669DA6;
-}
-
-.centered-text {
- padding-top: 10px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #FFFFFF;
-}
- 
-
-.text1 {
-
-  color: #FFFFFF;
-  text-align: left;
-  width: 100%;
-  font-weight: bold;
-  font-size: 3.7rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+   color: #FFFFFF;
+   text-align: left;
+   width: 100%;
+   font-weight: bold;
+   font-size: 3.7rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
 
 
 
@@ -121,35 +128,23 @@
 
 
 
-.item1Child2 {
-  width: 100%;
-  height: 130px;
-  font-weight: bold;
+ .item1Child2 {
+   width: 100%;
+   height: 130px;
+   font-weight: bold;
 
-}
+ }
 
-.text2 {
+ .text2 {
 
-  color: #FFFFFF;
-  text-align: left;
-  width: 100%;
-  font-family: 'Cooper Hewitt' sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  font-size: 1.6rem;
-}
-
-
-.item2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 35%;
-  height: 330px;
-}
-
-
+   color: #FFFFFF;
+   text-align: left;
+   width: 100%;
+   font-family: 'Cooper Hewitt' sans-serif;
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-size: 1.6rem;
+ }
 
 
  
@@ -160,7 +155,112 @@
 
 
 
+ @media only screen and (max-width: 375px) { /* for iPhone */
+  .fcontainer {
+    height: auto;
+    min-height: 100vh;
+    padding: 0 15px;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
+  .item1 {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+  }
 
+  .item1text2text1 {
+    font-size: 2.2rem;
+  }
 
- 
+  .item1-child1-kid1 {
+    height: 50px;
+  }
+
+  .rounded-div {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .centered-text {
+    font-size: 20px;
+  }
+
+  .text1 {
+    font-size: 2.2rem;
+  }
+
+  .text2 {
+    font-size: 1.2rem;
+  }
+
+  .item2 {
+    width: 100%;
+    height: 200px;
+
+    padding: 60px 0;
+  }
+
+  .item2 > div {
+    width: 90%;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 414px) { /* for Samsung and Xiaomi */
+  .fcontainer {
+    height: auto;
+    min-height: 100vh;
+    padding: 0 15px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .item1 {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .item1text2text1 {
+    font-size: 2.5rem;
+  }
+
+  .item1-child1-kid1 {
+    height: 50px;
+  }
+
+  .rounded-div {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .centered-text {
+    font-size: 24px;
+  }
+
+  .text1 {
+    font-size: 2.5rem;
+  }
+
+  .text2 {
+    font-size: 1.4rem;
+  }
+
+  .item2 {
+    width: 100%;
+    height: 200px;
+
+    padding: 60px 0;
+  }
+
+  .item2 > div {
+    width: 90%;
+    height: 300px;
+  }
+}

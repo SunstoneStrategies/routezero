@@ -3,6 +3,14 @@
     background-color:#E89725 ;
     text-decoration-color:#E89725 ;
 } */
+.container-map {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e9b4;
+  }
+  
 .bgimageLA{
     background-image: url("./Images/LA.png");
     background-position: center;
@@ -33,7 +41,7 @@
     background-repeat: no-repeat; 
     background-size: cover;
 }
-
+/* Default styles for larger screens */
 .flexconY {
     display: flex;
     height: 450px;
@@ -43,40 +51,76 @@
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-}
-
-.flexcon {
+  }
+  
+  .flexcon {
     display: flex;
     height: 420px;
     margin-top: 10px;
-    width: 520px; 
+    width: 520px;
     justify-content: space-between;
-    /* added to horizontally center the boxes */
-}
-
-.row1logo {
+  }
+  
+  .row1logo {
     width: 270px;
     height: 200px;
-    border-radius: 5px; 
+    border-radius: 5px;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
-}
-
-.row1station1 {
+  }
+  
+  .row1station1 {
     width: 250px;
-    height: 190px; 
+    height: 190px;
     margin-left: 10px;
- 
-}
-
-.row1station2 {
+  }
+  
+  .row1station2 {
     width: 270px;
-    height: 150px; 
-    margin-right: 10px; 
-}
-
-.row1station3 {
+    height: 150px;
+    margin-right: 10px;
+  }
+  
+  .row1station3 {
     width: 270px;
-    height: 150px;  
-}
+    height: 150px;
+  }
+  
+  /* Styles for smaller screens */
+  @media only screen and (max-width: 415px) {
+    .flexconY {
+      height: auto;
+      width: auto;
+      padding: 20px;
+      border-radius: 0;
+    }
+    .container-map {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3e9b4;
+      }
+    .flexcon {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .row1logo {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      margin-bottom: 10px;
+    }
+  
+    .row1station1,
+    .row1station2,
+    .row1station3 {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }

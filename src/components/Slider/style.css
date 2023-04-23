@@ -1,15 +1,78 @@
-.sliderDiv1{
+.bgD {
+
+    background-color: #f3e9b4;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderDiv1 {
     background-image: url("./Images/carr.png");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative; 
-    background-color: #f3e9b4;;
+    position: relative;
+    background-color: #f3e9b4;
 }
 
-.bgD{
-    padding: 20px; 
-    background-color: #f3e9b4;;
+.sliderItem {
+    background-color: #669DA6;
+    border-radius: 40px;
+    height: 40vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.padding-100 {
+    padding: 100px;
+}
+
+.sliderDiv2 {
+    background-color: #669DA6;
+    border-radius: 40px;
+    height: 40vh;
+    margin: 70px;
+    color: #FFFFFF;
+}
+
+/* Media Query for mobile devices with max width 415px */
+@media (max-width: 415px) {
+    .bgD {
+        padding: 10px;
+    }
+
+    .parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .sliderItem {
+
+        height: 40vh;
+        color: #FFFFFF;
+        margin-right: 10px;
+    }
+
+    .sliderDiv1 {
+        height: 300px;
+    }
+
+
+    .padding-100 {
+        padding: 50px;
+    }
+
+    .sliderDiv2 {
+        margin: 20px;
+    }
 }

@@ -9,11 +9,7 @@ import UsMap from "./components/Map/UsMap";
 function App() {
   return (
     <div
-      style={{
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
+     
     >
       <Header />
       <Slider />

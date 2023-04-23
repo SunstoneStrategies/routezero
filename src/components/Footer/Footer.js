@@ -23,19 +23,21 @@ export default function Footer() {
                   backgroundColor: "#FFA800",
                   height: "60px",
                   width: "200px",
-                  borderRadius: "20px", marginTop: "80px" 
+                  borderRadius: "20px", marginTop: "90px" 
                 }}
                 sx={{ height: "60px", width: "200px" ,fontWeight:"bold"}}
               >
                 Email Us!
               </Button>
             </div>
-            <h5 className="text" style={{ marginTop: "20px" ,fontWeight:"500"}}>
+            <h6 className="text" style={{ marginTop: "40px" ,fontWeight:"400"}}>
               Want to learn more about Route Zero and find out if we’re <br />{" "}
               going to be cruising through a city near you?
-            </h5>
+            </h6>
+            
           </div>
         </div>
+         
         <footer className="footer">
           Route Zero Relay © 2023 . All rights reserved
         </footer>

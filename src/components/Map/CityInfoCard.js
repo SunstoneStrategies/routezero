@@ -76,27 +76,32 @@ export default function CityInfoCard(props) {
       className="card-container d-flex flex-wrap"
       style={{ position: "absolute", transform: "translate(50%, 10px)" }}
     >
-      {LosAngelesCA.stations.length === 1 ? (
-        <div
-          className="card"
-          style={{ flex: "0 0 auto", margin: "10px", maxWidth: "400px" }}
-        >
-          <img className="card-img-top" src={LALogo} alt="carddetail" />
-          <div className="card-body">
-            <h5 className="card-title" style={{ color: "#E89725" }}>
-              {LosAngelesCA.stations[0].title}
-            </h5>
-            <p className="card-text">{LosAngelesCA.stations[0].description}</p>
-            <a
-              href="/"
-              className="btn  "
-              style={{ display: "block", margin: "auto" }}
-            >
-              Learn more
-            </a>
-          </div>
-        </div>
-      ) : (
+      {
+      // LosAngelesCA.stations.length === 1 ? (
+      //   <div
+      //     className="card"
+      //     style={{ flex: "0 0 auto", margin: "10px", maxWidth: "400px" }}
+      //   >
+      //     <img className="card-img-top" src={LALogo} alt="carddetail" />
+      //     <div className="card-body">
+      //       <h5 className="card-title" style={{ color: "#E89725" }}>
+      //         {LosAngelesCA.stations[0].title}
+      //       </h5>
+      //       <p className="card-text">{LosAngelesCA.stations[0].description}</p>
+            
+      //       <button type="button" class="btn btn-secondary">Secondary</button>
+      //       <a
+      //         href="/"
+      //         className="btn  "
+      //         style={{ display: "block", margin: "auto" }}
+      //       >
+      //         Learn more
+      //       </a>
+      //     </div>
+      //   </div>
+      // ) : 
+      
+      (
         <>
           {" "}
           <div className="card-container flexconY">
@@ -154,40 +159,44 @@ export default function CityInfoCard(props) {
       className="card-container d-flex flex-wrap"
       style={{ position: "absolute", transform: "translate(-50%, 10px)" }}
     >
-      {KansasCityMO.stations.length === 1 ? (
-        <div
-          className="card  "
-          style={{ flex: "0 0 auto", margin: "10px", maxWidth: "400px" }}
-        >
-          <img
-            className="card-img-top bgimageKC"
-            src={KCLogo}
-            alt="carddetail"
-          />
-          <div className="card-body">
-            <h5 className="card-title" style={{ color: "#E89725" }}>
-              {KansasCityMO.stations[0].title}
-            </h5>
-            <p className="card-text">{KansasCityMO.stations[0].description}</p>
-            <a
-              href="/"
-              className="btn btn-primary"
-              style={{ display: "block", margin: "auto" }}
-            >
-              Learn more
-            </a>
-          </div>
-        </div>
-      ) : (
+      {
+      // KansasCityMO.stations.length === 1 ? (
+      //   <div
+      //     className="card  "
+      //     style={{ flex: "0 0 auto", margin: "10px", maxWidth: "400px" }}
+      //   >
+      //     <img
+      //       className="card-img-top bgimageKC"
+      //       src={KCLogo}
+      //       alt="carddetail"
+      //     />
+      //     <div className="card-body">
+      //       <h5 className="card-title" style={{ color: "#E89725" }}>
+      //         {KansasCityMO.stations[0].title}
+      //       </h5>
+      //       <p className="card-text">{KansasCityMO.stations[0].description}</p>
+      //       <a
+      //         href="/"
+      //         className="btn btn-primary"
+      //         style={{ display: "block", margin: "auto" }}
+      //       >
+      //         Learn more
+      //       </a>
+      //     </div>
+      //   </div>
+      // ) : 
+      (
         <>
           {" "}
-          <div className="card-container flexconY">
+          <div className="card-container flexconY ">
             <div className=" flexcon">
               <div className="row1logo bgimageKC"></div>
               <div className="row1station1">
+              
                 <h6 className="card-title" style={{ color: "#E89725" }}>
-                  &#8226; {KansasCityMO.stations[1].title}
+                  &#8226; {KansasCityMO.stations[1].title}             
                 </h6>
+                
                 <p
                   className="card-text"
                   style={{
@@ -203,9 +212,11 @@ export default function CityInfoCard(props) {
             </div>
             <div className=" flexcon">
               <div className="row1station2">
+                
                 <h6 className="card-title" style={{ color: "#E89725" }}>
-                  &#8226; {KansasCityMO.stations[0].title}
+                  &#8226; {KansasCityMO.stations[0].title} 
                 </h6>
+                
                 <p
                   className="card-text"
                   style={{

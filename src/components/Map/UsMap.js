@@ -11,14 +11,7 @@ import {
 const geoUrl =
   "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/united-states/us-albers.json";
 
-const containerStyle = {
-  width: "100%",
-  height: "100vh",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: "#f3e9b4",
-};
+ 
 
 export default function UsMap() {
   const [hoveredState, setHoveredState] = useState("");
@@ -70,9 +63,11 @@ export default function UsMap() {
   const handleStateLeave = () => {
     setHoveredState("");
   };
-
+  const handleButtonClicked = () => {
+    setHoveredState("");
+  };
   return geoUrl !== "" ? (
-    <div style={containerStyle}>
+    <div className="container-map">
       <ComposableMap
         projection="geoAlbersUsa"
         projectionConfig={{
@@ -116,9 +111,11 @@ export default function UsMap() {
             <Marker
               key={state}
               coordinates={coordinates}
+              
               onMouseEnter={() => {
                 setHoveredState(state);
               }}
+              
               onMouseLeave={handleStateLeave}
             >
               <g
