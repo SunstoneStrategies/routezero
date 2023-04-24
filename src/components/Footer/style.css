@@ -121,10 +121,10 @@
 
      .footer {
  
-         font-size: 14px;
+         font-size: 12px;
          font-family: 'Poppins', sans-serif;
          height: 50px;
-         font-weight: 800;
+         font-weight: 500;
          width: 80%;
      }
      .button-style {
