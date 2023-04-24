@@ -1,58 +1,139 @@
-.containerDiv {
-    display: flex;
-    justify-content: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    flex-direction: column;
-    align-items: center;
+ .custom-text {
+     font-weight: 400;
+ }
+
+ .text {
+     color: #FFFFFF;
+     text-align: center;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+     font-size: 1.3rem;
+ }
+
+ .containerDiv {
+     display: flex;
+     height: 400px;
+     width: 100%;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 20px;
+     padding-top: 60px;
+     background-color: #f3e9b4; 
+
+ }
+
+
+
+ .carddiv {
+     background-image: url('./Images/Banner.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 35px;
+     flex-direction: column;
+     align-items: center;
+     background-size: cover;
+     background-position: center;
+     border-radius: 20px;
+     overflow: hidden;
+     width: 90%;
+     height: 900px;
+ }
+
+ .footer {
+
+     font-weight: 500;
+     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+     height: 100px;
+     width: 80%;
+     background-color: #f3e9b4; 
+
+     display: flex;
+     align-items: center;
+     /* aligns items vertically */
+     justify-content: center;
+     /* aligns items horizontally */
+ }
+ .button-style {
+    background-color: #FFA800;
+    height: 60px; 
+    width: 180px;
+    border-radius: 20px; 
+    margin-top: 120px;
+    margin-bottom: 20px;
 }
 
-.containerDiv {
-    background-color: #f3e9b4;
-
-}
-
-.text {
-    color: #FFFFFF;
-    text-align: center;
-    font-family: 'poppins',sans-serif;
-    font-weight: 500; 
-    font-size: 1.3  rem;
-
-}
-
-.carddiv {
-    background-image: url('./Images/Banner.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 90%;
-    height: 30vh;
-}
- 
-.footer {
-    text-align: center;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: 'poppins', sans-serif;
-    height: 5vh;
-    width: 100%;
-    background-color: #f3e9b4;
-}
-.blockquote-footer {
+ /* .blockquote-footer {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    color: #BBBBBB  ;
+    color: #BBBBBB;
     padding-bottom: 13px;
-  }
+} */
+
+ @media (max-width: 415px) {
+
+
+     .containerDiv {
+         display: flex;
+         height: 600px;
+         width: 100%;
+         justify-content: start;
+         flex-direction: column;
+         align-items: center;
+         padding-bottom: 20px;
+         padding-top: 60px;
+         background-color: #f3e9b4; 
+     }
+
+     
+
+
+     .custom-text {
+         font-weight: 400;
+         font-size: 12px;
+     }
+
+
+
+     .carddiv {
+         background-image: url('./Images/Banner.png');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+         display: flex;
+         justify-content: center;
+         margin-bottom: 35px;
+         flex-direction: column;
+         align-items: center;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         overflow: hidden;
+         width: 90%;
+         height: 150px;
+     }
+
+     .footer {
+ 
+         font-size: 14px;
+         font-family: 'Poppins', sans-serif;
+         height: 50px;
+         font-weight: 800;
+         width: 80%;
+     }
+     .button-style {
+        background-color: #FFA800;
+        height: 60px; 
+        width: 180px;
+        border-radius: 20px;
+        margin-bottom: 1px;
+        margin-top:60px;
+    }
+    
+ }

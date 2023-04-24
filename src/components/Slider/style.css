@@ -6,12 +6,13 @@
 .parent {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .sliderDiv1 {
     background-image: url("./Images/carr.png");
-    height: 500px;
+    height: 400px;
+    width:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -35,11 +36,13 @@
 }
 
 .sliderDiv2 {
+    width: 100%;
     background-color: #669DA6;
     border-radius: 40px;
     height: 40vh;
     margin: 70px;
     color: #FFFFFF;
+    align-items: center;
 }
 
 /* Media Query for mobile devices with max width 415px */
@@ -53,7 +56,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 95%;
+        width: 100%;
     }
 
     .sliderItem {
@@ -72,7 +75,7 @@
         padding: 50px;
     }
 
-    .sliderDiv2 {
-        margin: 20px;
+    .sliderDiv2 { 
+        margin: 40px; 
     }
 }

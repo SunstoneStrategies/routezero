@@ -7,12 +7,11 @@ import { Carousel } from "react-bootstrap";
 export default function Slider() {
   return (
     <div className="bgD">
-      <Row className="parent">
-        <Col className="text-center">
-          <div className="sliderDiv1"></div>
-        </Col>
-        <Col className="text-center sliderDiv2">
-          <Carousel>
+      <div className="parent">
+        <div className="sliderDiv1"></div>
+
+        <div className="text-center sliderDiv2">
+          <Carousel className="">
             <Carousel.Item>
               <div className="sliderItem">
                 <p className="padding-100">
@@ -22,7 +21,7 @@ export default function Slider() {
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="sliderItem">
+              <div className="sliderItem padding-100">
                 <p className="padding-200">
                   Thanks to historic investments in charging infrastructure,
                   battery manufacturing, recent commitments from automakers, and
@@ -44,8 +43,8 @@ export default function Slider() {
               </div>
             </Carousel.Item>
           </Carousel>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </div>
   );
 }

@@ -16,6 +16,7 @@ function App() {
       <Banner />
       <UsMap />
       <Clients />
+      
       <Footer />
     </div>
   );

@@ -8,36 +8,17 @@ export default function Footer() {
     <>
       <div className="containerDiv">
         <div className="carddiv">
-          <div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Button
-                variant="contained"
-                color="secondary"
-                style={{
-                  backgroundColor: "#FFA800",
-                  height: "60px",
-                  width: "200px",
-                  borderRadius: "20px", marginTop: "90px" 
-                }}
-                sx={{ height: "60px", width: "200px" ,fontWeight:"bold"}}
-              >
-                Email Us!
-              </Button>
-            </div>
-            <h6 className="text" style={{ marginTop: "40px" ,fontWeight:"400"}}>
-              Want to learn more about Route Zero and find out if we’re <br />{" "}
-              going to be cruising through a city near you?
-            </h6>
-            
-          </div>
+        <button type="button" className="btn btn-secondary button-style">Learn more</button>
+
+          <h6
+            className="text custom-text"
+            style={{ marginTop: "10px" }} // added margin top
+          >
+            Want to learn more about Route Zero and find out if we’re <br />{" "}
+            going to be cruising through a city near you?
+          </h6>
         </div>
-         
+
         <footer className="footer">
           Route Zero Relay © 2023 . All rights reserved
         </footer>
