@@ -70,18 +70,22 @@ export default function Clients() {
           <Grid item xs={6} sm={2.4}>
             <Box className="image16" my={5} p={5}></Box>
           </Grid>
-          <Grid item xs={6} sm={2}>
+          <Grid item xs={4} sm={2}>
             <Box className="image17" my={5} p={5}></Box>
           </Grid>
-           
 
-
-          <Grid item xs={3}>
-            <Box className="image18" my={5} p={5}></Box>
+          <Grid item xs={4}>
+            <Box className="image18" my={5} p={6}></Box>
           </Grid>
 
-          <Grid item xs={2}>
+          <Grid item xs={4}>
             <Box className="image19" my={5} p={5}></Box>
+          </Grid>
+          <Grid item  >
+            <Box className="image20 padding"   ></Box>
+          </Grid>
+          <Grid item xs={4}>
+            <Box className="image21" my={5} p={5}></Box>
           </Grid>
         </StyledGrid>
       </div>
