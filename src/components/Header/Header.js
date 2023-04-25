@@ -21,7 +21,7 @@ export default function Header() {
 
             <div className="item1Child2">
               <h5 className="text2">
-                Charging Ahead to a Zero Emission <br /> Transportation Feature
+                Charging Ahead to a Zero Emission <br /> Transportation Future 
               </h5>
             </div>
           </div>
