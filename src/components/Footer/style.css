@@ -1,14 +1,13 @@
  .custom-text {
      font-weight: 400;
+     font-size: 16px;
  }
 
  .text {
      color: #FFFFFF;
      text-align: center;
-     font-family: 'Poppins', sans-serif;
-
+     font-family: 'Poppins', sans-serif; 
      font-weight: 500;
-     font-size: 1.3rem;
  }
 
  .containerDiv {
@@ -22,9 +21,9 @@
      padding-top: 60px;
      background-color: #f3e9b4;
      background-image: url("./Images/Grains.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
 
  }
 
@@ -129,11 +128,11 @@
      .footer {
          /* font-family: 'Jomhuria', cursive; */
          font-family: 'Poppins', sans-serif;
-         font-size: 12px;
+         font-size: 11px;
          /* font-family: 'Poppins', sans-serif; */
          height: 50px;
          font-weight: 500;
-         width: 80%;
+         width: 100%;
      }
 
      .button-style {

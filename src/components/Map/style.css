@@ -167,8 +167,7 @@
 
     .customcardtitle {
         font-size: 15px;
-        color: #E89725;
-        font-weight: bold;
+        color: #E89725; 
     }
     .btnmyclass {
         display: block;

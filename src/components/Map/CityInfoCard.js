@@ -13,7 +13,7 @@ export default function CityInfoCard(props) {
   const LosAngelesCA = {
     stations: [
       {
-        title: "Monica Pier",
+        title: "Los Angeles, CA at Santa Monica Pier",
         description:
           "Route Zero is kicking off at the end of historic Route 66 in Santa Monica! What better way to charge ahead to a zero emissions future than with a nod to the history and nostalgia of Route 66?",
       },
@@ -21,6 +21,11 @@ export default function CityInfoCard(props) {
         title: "Flagstaff, Arizona",
         description:
           "The Route Zero Relay will be stopping in Arizona on our zero emission trek across the country. Strong cleaner cars standards will help reduce tailpipe pollution and protect the health of Arizonans and people all across the country.",
+      },
+      {
+        title: "Santa Fe, NM",
+        description:
+          "Route Zero will be hitting Santa Fe to raise awareness about clean vehicles and the importance of strong policies to reduce tailpipe pollution and tackle the climate crisis.",
       },
     ],
   };
@@ -86,7 +91,7 @@ export default function CityInfoCard(props) {
               <div className="row1logo bgimageLA"></div>
               <div className="row1station1">
                 <h6 className="card-title" style={{ color: "#E89725" }}>
-                  &#8226; {LosAngelesCA.stations[1].title}
+                &#8226;{LosAngelesCA.stations[1].title}
                 </h6>
                 <p
                   className="card-text"
@@ -103,8 +108,8 @@ export default function CityInfoCard(props) {
             </div>
             <div className=" flexcon">
               <div className="row1station2">
-                <h6 className="card-title" style={{ color: "#E89725" }}>
-                  &#8226; {LosAngelesCA.stations[0].title}
+                <h6 className="card-title" style={{ color: "#E89725",fontWeight:"bold",fontSize:"18px"  }}>
+                   {LosAngelesCA.stations[0].title}
                 </h6>
                 <p
                   className="card-text"
@@ -118,7 +123,22 @@ export default function CityInfoCard(props) {
                   {LosAngelesCA.stations[0].description}
                 </p>
               </div>
-              <div className="row1station3"> </div>
+              <div className="row1station3"> 
+              <h6 className="card-title" style={{ color: "#E89725" }}>
+                  &#8226; {LosAngelesCA.stations[2].title}
+                </h6>
+                <p
+                  className="card-text"
+                  style={{
+                    color: "#555555",
+                    textAlign: "left",
+                    fontSize: "14px",
+                    paddingTop: "10px",
+                  }}
+                >
+                  {LosAngelesCA.stations[2].description}
+                </p>
+              </div>
             </div>
             {/* <a
               href="/"
@@ -146,7 +166,7 @@ export default function CityInfoCard(props) {
               <div className="row1logo bgimageKC"></div>
               <div className="row1station1">
               
-                <h6 className="card-title" style={{ color: "#E89725" }}>
+                <h6 className="card-title" style={{ color: "#E89725"}}>
                   &#8226; {KansasCityMO.stations[1].title}             
                 </h6>
                 
@@ -166,8 +186,8 @@ export default function CityInfoCard(props) {
             <div className=" flexcon">
               <div className="row1station2">
                 
-                <h6 className="card-title" style={{ color: "#E89725" }}>
-                  &#8226; {KansasCityMO.stations[0].title} 
+                <h6 className="card-title" style={{ color: "#E89725",fontWeight:"bold" ,fontSize:"18px"  }}>
+                    {KansasCityMO.stations[0].title} 
                 </h6>
                 
                 <p
@@ -213,7 +233,7 @@ export default function CityInfoCard(props) {
         >
           <img className="card-img-top" src={DMLogo} alt="carddetail" />
           <div className="card-body">
-            <h5 className="card-title" style={{ color: "#E89725" }}>
+            <h5 className="card-title" style={{ color: "#E89725",fontWeight:"bold"  ,fontSize:"18px" }}>
               {DetroitMichigan.stations[0].title}
             </h5>
             <p className="card-text">
@@ -265,8 +285,8 @@ export default function CityInfoCard(props) {
             </div>
             <div className=" flexcon">
               <div className="row1station2">
-                <h6 className="card-title" style={{ color: "#E89725" }}>
-                  &#8226; {PittsburghPennsylvania.stations[0].title}
+                <h6 className="card-title" style={{ color: "#E89725",fontWeight:"bold",fontSize:"18px"  }}>
+                    {PittsburghPennsylvania.stations[0].title}
                 </h6>
                 <p
                   className="card-text"
@@ -311,7 +331,7 @@ export default function CityInfoCard(props) {
         >
           <img className="card-img-top" src={WDLogo} alt="carddetail" />
           <div className="card-body">
-            <h5 className="card-title" style={{ color: "#E89725" }}>
+            <h5 className="card-title" style={{ color: "#E89725",fontWeight:"bold"  ,fontSize:"18px" }}>
               {WashingtonDC.stations[0].title}
             </h5>
             <p className="card-text">{WashingtonDC.stations[0].description}</p>

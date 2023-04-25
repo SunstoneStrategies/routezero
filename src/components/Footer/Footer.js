@@ -8,7 +8,21 @@ export default function Footer() {
     <>
       <div className="containerDiv">
         <div className="carddiv">
-        <button type="button" className="btn btn-secondary button-style">Learn more</button>
+          <div
+            className="btn btn-secondary button-style"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <a
+              href="mailto:info@rtzero.org, info@rtzero.org"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Email us!
+            </a>
+          </div>
 
           <h6
             className="text custom-text"
@@ -20,7 +34,7 @@ export default function Footer() {
         </div>
 
         <footer className="footer">
-          Route Zero Relay © 2023 . All rights reserved
+          Address: 360 Grand Avenue, #187 Oakland, CA 94610-4840
         </footer>
       </div>
     </>

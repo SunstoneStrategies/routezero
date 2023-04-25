@@ -26,7 +26,7 @@ export default function UsMap() {
   const LosAngelesCA = {
     stations: [
       {
-        title: "Monica Pier",
+        title: "Los Angeles, CA at Santa Monica Pier",
         description:
           "Route Zero is kicking off at the end of historic Route 66 in Santa Monica! What better way to charge ahead to a zero emissions future than with a nod to the history and nostalgia of Route 66?",
       },
@@ -34,6 +34,12 @@ export default function UsMap() {
         title: "Flagstaff, Arizona",
         description:
           "The Route Zero Relay will be stopping in Arizona on our zero emission trek across the country. Strong cleaner cars standards will help reduce tailpipe pollution and protect the health of Arizonans and people all across the country.",
+      }
+      ,
+      {
+        title: "Santa Fe, NM",
+        description:
+          "Route Zero will be hitting Santa Fe to raise awareness about clean vehicles and the importance of strong policies to reduce tailpipe pollution and tackle the climate crisis.",
       },
     ],
   };
@@ -221,17 +227,23 @@ export default function UsMap() {
                 >
                   <img className="card-img-top" src={LALogo} alt="carddetail" />
                   <div className="card-body">
-                    <h5 className="card-title customcardtitle"  >
+                    <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
                       {LosAngelesCA.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {LosAngelesCA.stations[0].description}
                     </p>
                     <h5 className="card-title customcardtitle" >
-                      {LosAngelesCA.stations[1].title}
+                    &#8226; {LosAngelesCA.stations[1].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {LosAngelesCA.stations[1].description}
+                    </p>
+                    <h5 className="card-title customcardtitle"  >
+                    &#8226; {LosAngelesCA.stations[2].title}
+                    </h5>
+                    <p className="card-text customcardtext">
+                      {LosAngelesCA.stations[2].description}
                     </p>
                     {/* <a
                       href="/"
@@ -252,14 +264,14 @@ export default function UsMap() {
                 >
                   <img className="card-img-top" src={KCLogo} alt="carddetail" />
                   <div className="card-body">
-                    <h5 className="card-title customcardtitle" style={{ color: "#E89725" }}>
+                  <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
                       {KansasCityMO.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {KansasCityMO.stations[0].description}
                     </p>
                     <h5 className="card-title customcardtitle" style={{ color: "#E89725" }}>
-                      {KansasCityMO.stations[1].title}
+                    &#8226; {KansasCityMO.stations[1].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {KansasCityMO.stations[1].description}
@@ -284,7 +296,7 @@ export default function UsMap() {
                 >
                   <img className="card-img-top" src={DMLogo} alt="carddetail" />
                   <div className="card-body">
-                    <h5 className="card-title customcardtitle" style={{ color: "#E89725" }}>
+                  <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
                       {DetroitMichigan.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
@@ -309,18 +321,18 @@ export default function UsMap() {
                 >
                   <img className="card-img-top" src={PPLogo} alt="carddetail" />
                   <div className="card-body">
-                    <h5 className="card-title customcardtitle" style={{ color: "#E89725" }}>
-                      {PittsburghPennsylvania.stations[1].title}
-                    </h5>
-                    <p className="card-text customcardtext">
-                      {PittsburghPennsylvania.stations[1].description}
-                    </p>
-
-                    <h5 className="card-title customcardtitle" style={{ color: "#E89725" }}>
+                  <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
                       {PittsburghPennsylvania.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {PittsburghPennsylvania.stations[0].description}
+                    </p>
+
+                    <h5 className="card-title customcardtitle" style={{ color: "#E89725" }}>
+                    &#8226; {PittsburghPennsylvania.stations[1].title}
+                    </h5>
+                    <p className="card-text customcardtext">
+                      {PittsburghPennsylvania.stations[1].description}
                     </p>
                     {/* <a
                       href="/"
@@ -342,7 +354,7 @@ export default function UsMap() {
                 >
                   <img className="card-img-top" src={WDLogo} alt="carddetail" />
                   <div className="card-body">
-                    <h5 className="card-title customcardtitle" style={{ color: "#E89725" }}>
+                  <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
                       {WashingtonDC.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
