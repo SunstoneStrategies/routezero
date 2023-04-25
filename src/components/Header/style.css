@@ -35,17 +35,18 @@
 
 
  .item2 {
-  
+
    background-image: url("./Images/route.png");
    background-position: center;
    background-repeat: no-repeat;
-   background-size: contain; 
+   background-size: contain;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
    width: 35%;
    height: 330px;
+   font-family: cooper;
  }
 
  .item1 {
@@ -63,7 +64,7 @@
    align-items: center;
    flex-direction: column;
    width: 100%;
-   height: 200px;
+   height: 300px;
    /* background-color: rgb(220, 143, 143); */
 
  }
@@ -71,13 +72,13 @@
  .item1-child1-kid1 {
    align-self: center;
    width: 100%;
-   height: 60px;
+   height: 100px;
    /* background-color: rgb(27, 5, 92); */
  }
 
  .item1-child1-kid2 {
    width: 100%;
-   height: 60px;
+   height: 80px;
    display: flex;
    align-items: center;
    /* background-color: rgb(116, 8, 8); */
@@ -89,8 +90,9 @@
    text-align: left;
    width: 45%;
    font-weight: bold;
-   font-size: 3.7rem;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 90px;
+   font-family: GinTest;
+
  }
 
  .rounded-div {
@@ -105,10 +107,11 @@
  }
 
  .centered-text {
-   padding-top: 10px;
+   padding-top: 15px;
    font-size: 30px;
    font-weight: bold;
    color: #FFFFFF;
+   font-family: cooper;
  }
 
 
@@ -118,10 +121,19 @@
    text-align: left;
    width: 100%;
    font-weight: bold;
-   font-size: 3.7rem;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 90px;
+   font-family: GinTest;
  }
 
+ @font-face {
+   font-family: GinTest;
+   src: url(./fonts/Gin/GinTest-Rough.otf);
+ }
+
+ @font-face {
+   font-family: cooper;
+   src: url(./fonts/cooper/cooper/CooperHewitt-Book.ttf);
+ }
 
 
 
@@ -140,127 +152,102 @@
    color: #FFFFFF;
    text-align: left;
    width: 100%;
-   font-family: 'Cooper Hewitt' sans-serif;
+   font-family: cooper;
    font-weight: 400;
    letter-spacing: 1px;
    font-size: 1.6rem;
  }
 
 
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 414px) {
+
+   /* for Samsung and Xiaomi */
+   .fcontainer {
+     height: auto;
+     min-height: 100vh;
+     padding: 0 15px;
+     flex-direction: row-reverse;
+     justify-content: flex-start;
+     align-items: center;
+   }
+
+   .item1 {
+     width: 100%;
+     height: auto;
+     padding: 60px 0;
+   }
+
+  
+   .item1text2text1 {
+
+    color: #FFFFFF;
+    text-align: left;
+    width: 45%;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: GinTest;
  
-
-
-
-
-
-
-
- @media only screen and (max-width: 375px) { /* for iPhone */
-  .fcontainer {
-    height: auto;
-    min-height: 100vh;
-    padding: 0 15px;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: center;
   }
-
-  .item1 {
-    width: 100%;
-    height: auto;
-    padding: 60px 0;
-  }
-
-  .item1text2text1 {
-    font-size: 2.2rem;
-  }
-
-  .item1-child1-kid1 {
-    height: 50px;
-  }
-
-  .rounded-div {
-    width: 100px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-  .centered-text {
-    font-size: 20px;
-  }
-
   .text1 {
-    font-size: 2.2rem;
+
+    color: #FFFFFF;
+    text-align: left; 
+    font-weight: bold;
+    font-size: 60px;
+    font-family: GinTest;
   }
-
-  .text2 {
-    font-size: 1.2rem;
-  }
-
-  .item2 {
-    width: 100%;
-    height: 200px;
-
-    padding: 60px 0;
-  }
-
-  .item2 > div {
-    width: 90%;
-    height: 300px;
-  }
-}
-
-@media only screen and (max-width: 414px) { /* for Samsung and Xiaomi */
-  .fcontainer {
-    height: auto;
-    min-height: 100vh;
-    padding: 0 15px;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
+   .item1-child1-kid1 {
+     height: 70px;
+     /* background-color: black; */
+   }
+   .item1-child1-kid2 { 
+    height: 60px;
+    display: flex;
     align-items: center;
+    /* background-color: rgb(116, 8, 8); */
   }
+  
 
-  .item1 {
-    width: 100%;
-    height: auto;
-    padding: 60px 0;
-  }
+   .rounded-div {
+     width: 100px;
+     height: 40px;
+     font-size: 20px;
+   }
 
-  .item1text2text1 {
-    font-size: 2.5rem;
-  }
+   .centered-text {
+     font-size: 24px;
+   }
 
-  .item1-child1-kid1 {
-    height: 50px;
-  }
+   
 
-  .rounded-div {
-    width: 100px;
-    height: 40px;
-    font-size: 20px;
-  }
+   .text2 {
+     font-size: 20px;
+   }
 
-  .centered-text {
-    font-size: 24px;
-  }
+   .item2 {
+     width: 100%;
+     height: 200px;
 
-  .text1 {
-    font-size: 2.5rem;
-  }
+     padding: 60px 0;
+   }
 
-  .text2 {
-    font-size: 1.4rem;
-  }
+   .item2>div {
+     width: 90%;
+     height: 300px;
+   }
+ }
 
-  .item2 {
-    width: 100%;
-    height: 200px;
 
-    padding: 60px 0;
-  }
 
-  .item2 > div {
-    width: 90%;
-    height: 300px;
-  }
-}
+
+ 

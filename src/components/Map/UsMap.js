@@ -233,13 +233,13 @@ export default function UsMap() {
                     <p className="card-text customcardtext">
                       {LosAngelesCA.stations[1].description}
                     </p>
-                    <a
+                    {/* <a
                       href="/"
                       className="btn btn-primary btnmyclass"
                       
                     >
                       Learn more
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               }
@@ -264,13 +264,13 @@ export default function UsMap() {
                     <p className="card-text customcardtext">
                       {KansasCityMO.stations[1].description}
                     </p>
-                    <a
+                    {/* <a
                       href="/"
                       className="btn btn-primary btnmyclass"
                       
                     >
                       Learn more
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               }
@@ -290,13 +290,13 @@ export default function UsMap() {
                     <p className="card-text customcardtext">
                       {DetroitMichigan.stations[0].description}
                     </p>
-                    <a
+                    {/* <a
                       href="/"
                       className="btn btn-primary btnmyclass"
                       
                     >
                       Learn more
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               }
@@ -322,13 +322,13 @@ export default function UsMap() {
                     <p className="card-text customcardtext">
                       {PittsburghPennsylvania.stations[0].description}
                     </p>
-                    <a
+                    {/* <a
                       href="/"
                       className="btn btn-primary btnmyclass btnmyclass"
                        
                     >
                       Learn more
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               }
@@ -348,13 +348,13 @@ export default function UsMap() {
                     <p className="card-text customcardtext">
                       {WashingtonDC.stations[0].description}
                     </p>
-                    <a
+                    {/* <a
                       href="/"
                       className="btn btn-primary btnmyclass"
                       
                     >
                       Learn more
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               }

@@ -120,13 +120,13 @@ export default function CityInfoCard(props) {
               </div>
               <div className="row1station3"> </div>
             </div>
-            <a
+            {/* <a
               href="/"
               className="btn btn-primary"
               style={{ margin: "20px", backgroundColor: "#E89725" }}
             >
               Learn more
-            </a>
+            </a> */}
           </div>
         </>
       )}
@@ -182,15 +182,15 @@ export default function CityInfoCard(props) {
                   {KansasCityMO.stations[0].description}
                 </p>
               </div>
-              <div className="row1station3"> </div>
+              {/* <div className="row1station3"> </div> */}
             </div>
-            <a
+            {/* <a
               href="/"
               className="btn btn-secondary"
               style={{ margin: "20px", backgroundColor: "#E89725" }}
             >
               Learn more
-            </a>
+            </a> */}
           </div>
         </>
       )}
@@ -219,7 +219,7 @@ export default function CityInfoCard(props) {
             <p className="card-text">
               {DetroitMichigan.stations[0].description}
             </p>
-            <a
+            {/* <a
               href="/"
               className="btn btn-primary"
               style={{
@@ -230,7 +230,7 @@ export default function CityInfoCard(props) {
               }}
             >
               Learn more
-            </a>
+            </a> */}
           </div>
         </div>
       ) }
@@ -280,15 +280,15 @@ export default function CityInfoCard(props) {
                   {PittsburghPennsylvania.stations[0].description}
                 </p>
               </div>
-              <div className="row1station3"> </div>
+              {/* <div className="row1station3"> </div> */}
             </div>
-            <a
+            {/* <a
               href="/"
               className="btn btn-secondary"
               style={{ margin: "20px", backgroundColor: "#E89725" }}
             >
               Learn more
-            </a>
+            </a> */}
           </div>
         </>
       )}
@@ -315,7 +315,7 @@ export default function CityInfoCard(props) {
               {WashingtonDC.stations[0].title}
             </h5>
             <p className="card-text">{WashingtonDC.stations[0].description}</p>
-            <a
+            {/* <a
               href="/"
               className="btn btn-primary"
               style={{
@@ -326,7 +326,7 @@ export default function CityInfoCard(props) {
               }}
             >
               Learn more
-            </a>
+            </a> */}
           </div>
         </div>
       ) 
