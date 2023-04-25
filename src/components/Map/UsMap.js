@@ -146,6 +146,7 @@ export default function UsMap() {
         <ComposableMap
           onClick={handleStateLeave}
           projection="geoAlbersUsa"
+          style={{width:"100%"}}
           projectionConfig={{
             scale: 700,
           }}
