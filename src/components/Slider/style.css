@@ -1,12 +1,20 @@
 .bgD {
 
     background-color: #f3e9b4;
+    
 }
 
 .parent {
     display: flex;
     align-items: center;
     justify-content: center; 
+    background-image: url("./Images/Grains.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: #f3e9b4;
+    
 }
 
 .sliderDiv1 {
@@ -17,8 +25,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    background-color: #f3e9b4;
+    
 }
+
 
 .sliderItem {
     background-color: #669DA6;

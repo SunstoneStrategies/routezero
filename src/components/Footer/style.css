@@ -21,6 +21,10 @@
      padding-bottom: 20px;
      padding-top: 60px;
      background-color: #f3e9b4;
+     background-image: url("./Images/Grains.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
  }
 
