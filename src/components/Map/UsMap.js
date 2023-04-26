@@ -34,8 +34,7 @@ export default function UsMap() {
         title: "Flagstaff, Arizona",
         description:
           "The Route Zero Relay will be stopping in Arizona on our zero emission trek across the country. Strong cleaner cars standards will help reduce tailpipe pollution and protect the health of Arizonans and people all across the country.",
-      }
-      ,
+      },
       {
         title: "Santa Fe, NM",
         description:
@@ -110,6 +109,7 @@ export default function UsMap() {
     {
       coordinates: [-77.007507, 38.900497],
       state: "Washington, DC",
+      
     },
     {
       coordinates: [-83.045753, 42.331429],
@@ -136,6 +136,42 @@ export default function UsMap() {
     //   state: "Joliet, IL",
     // },
   ];
+
+  const coordinatedDataStates = [
+    {
+      
+      name:"Pennsylvania"
+    },
+    {
+        
+      name:"Maryland"
+
+    },
+    {
+      
+      name:"District of Columbia"
+    },
+    { 
+      name: "Michigan",
+    },
+    {
+       
+      name: "California",
+    },
+    { 
+      name: "Arizona",
+    },
+    {
+      
+      name: "New Mexico",
+    },
+    { 
+      name: "Kansas",
+    },
+    { 
+      name: "Illinois",
+    },
+  ];
   const handleStateLeave = () => {
     setHoveredState("");
   };
@@ -146,7 +182,7 @@ export default function UsMap() {
         <ComposableMap
           onClick={handleStateLeave}
           projection="geoAlbersUsa"
-          style={{width:"100%"}}
+          style={{ width: "100%" }}
           projectionConfig={{
             scale: 700,
           }}
@@ -154,27 +190,44 @@ export default function UsMap() {
           {/* <ComposableMap projection="geoAlbersUsa" viewBox="-150 0 1100 600"> */}
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
-              geographies.map((geo) => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  fill="#4C7A81"
-                  stroke="#f3e9b4"
-                  strokeWidth={2}
-                  style={{
-                    default: {
-                      fill: "#4C7A81",
-                      outline: "#0000",
-                      backgroundImage: "url('./Images/loc.png')",
-                    },
-                    hover: {
-                      fill: "#E89725",
-                      outline: "none",
-                    },
-                    pressed: { fill: "#02A" },
-                  }}
-                />
-              ))
+              geographies.map((geo) => {
+
+                const state = geo.properties.name;
+                const IsMain = coordinatedDataStates.some((data)=>{
+                  return 'Arizona' ===state | 'Kansas' ===state| 'Maryland' ===state| 'Michigan' ===state
+                })
+                const isHighlighted = coordinatedDataStates.some(
+                  (data) => {
+                    
+                    return data.name === state
+                  }
+                 
+                );
+
+              
+                 console.log(geo.properties); 
+
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    fill={IsMain  ? "#D77358" : isHighlighted ? "#E89725" : "#669DA6"}
+                    stroke="#f3e9b4"
+                    strokeWidth={2}
+                    style={{
+                      default: { 
+                        outline: "#0000",
+                        // backgroundImage: "url('./Images/loc.png')",
+                      },
+                      hover: {
+                        fill: IsMain  ? "#D77358" : isHighlighted ? "#E89725"  : "#4C7A81",
+                        outline: "none",
+                      },
+                      pressed: { fill: "#02A" },
+                    }}
+                  />
+                );
+              })
             }
           </Geographies>
           <Line
@@ -189,10 +242,9 @@ export default function UsMap() {
                 key={state}
                 coordinates={coordinates}
                 onMouseEnter={() => {
-                  if(!isMobile){
+                  if (!isMobile) {
                     setHoveredState(state);
                   }
-                  
                 }}
                 onClick={handleStateLeave}
               >
@@ -222,26 +274,26 @@ export default function UsMap() {
           <div className="mobiletoshowLogo">
             <div className="card-container d-flex flex-wrap">
               {
-                <div
-                  className="card myclass"
-                  
-                >
+                <div className="card myclass">
                   <img className="card-img-top" src={LALogo} alt="carddetail" />
                   <div className="card-body">
-                    <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
+                    <h5
+                      className="card-title customcardtitle"
+                      style={{ fontWeight: "bold" }}
+                    >
                       {LosAngelesCA.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {LosAngelesCA.stations[0].description}
                     </p>
-                    <h5 className="card-title customcardtitle" >
-                    &#8226; {LosAngelesCA.stations[1].title}
+                    <h5 className="card-title customcardtitle">
+                      &#8226; {LosAngelesCA.stations[1].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {LosAngelesCA.stations[1].description}
                     </p>
-                    <h5 className="card-title customcardtitle"  >
-                    &#8226; {LosAngelesCA.stations[2].title}
+                    <h5 className="card-title customcardtitle">
+                      &#8226; {LosAngelesCA.stations[2].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {LosAngelesCA.stations[2].description}
@@ -259,20 +311,23 @@ export default function UsMap() {
             </div>
             <div className="card-container d-flex flex-wrap">
               {
-                <div
-                  className="card myclass"
-                  
-                >
+                <div className="card myclass">
                   <img className="card-img-top" src={KCLogo} alt="carddetail" />
                   <div className="card-body">
-                  <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
+                    <h5
+                      className="card-title customcardtitle"
+                      style={{ fontWeight: "bold" }}
+                    >
                       {KansasCityMO.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {KansasCityMO.stations[0].description}
                     </p>
-                    <h5 className="card-title customcardtitle" style={{ color: "#E89725" }}>
-                    &#8226; {KansasCityMO.stations[1].title}
+                    <h5
+                      className="card-title customcardtitle"
+                      style={{ color: "#E89725" }}
+                    >
+                      &#8226; {KansasCityMO.stations[1].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {KansasCityMO.stations[1].description}
@@ -291,13 +346,13 @@ export default function UsMap() {
 
             <div className="card-container d-flex flex-wrap">
               {
-                <div
-                  className="card myclass"
-                  
-                >
+                <div className="card myclass">
                   <img className="card-img-top" src={DMLogo} alt="carddetail" />
                   <div className="card-body">
-                  <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
+                    <h5
+                      className="card-title customcardtitle"
+                      style={{ fontWeight: "bold" }}
+                    >
                       {DetroitMichigan.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
@@ -316,21 +371,24 @@ export default function UsMap() {
             </div>
             <div className="card-container d-flex flex-wrap">
               {
-                <div
-                  className="card myclass"
-                  
-                >
+                <div className="card myclass">
                   <img className="card-img-top" src={PPLogo} alt="carddetail" />
                   <div className="card-body">
-                  <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
+                    <h5
+                      className="card-title customcardtitle"
+                      style={{ fontWeight: "bold" }}
+                    >
                       {PittsburghPennsylvania.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {PittsburghPennsylvania.stations[0].description}
                     </p>
 
-                    <h5 className="card-title customcardtitle" style={{ color: "#E89725" }}>
-                    &#8226; {PittsburghPennsylvania.stations[1].title}
+                    <h5
+                      className="card-title customcardtitle"
+                      style={{ color: "#E89725" }}
+                    >
+                      &#8226; {PittsburghPennsylvania.stations[1].title}
                     </h5>
                     <p className="card-text customcardtext">
                       {PittsburghPennsylvania.stations[1].description}
@@ -349,13 +407,13 @@ export default function UsMap() {
 
             <div className="card-container d-flex flex-wrap">
               {
-                <div
-                  className="card myclass"
-                  
-                >
+                <div className="card myclass">
                   <img className="card-img-top" src={WDLogo} alt="carddetail" />
                   <div className="card-body">
-                  <h5 className="card-title customcardtitle"  style={{fontWeight:"bold" }} >
+                    <h5
+                      className="card-title customcardtitle"
+                      style={{ fontWeight: "bold" }}
+                    >
                       {WashingtonDC.stations[0].title}
                     </h5>
                     <p className="card-text customcardtext">
