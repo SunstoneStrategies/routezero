@@ -3,6 +3,38 @@
     background-color:#E89725 ;
     text-decoration-color:#E89725 ;
 } */
+-slider {
+
+    margin: 0 auto;
+    width: 500px;
+    ;
+}
+
+.slick-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+/* .image-slider img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+  } */
 .container-map {
     height: 100vh;
     display: flex;
@@ -96,6 +128,19 @@
     height: 150px;
 }
 
+.tip {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+}
+
+
 .mobiletoshow {}
 
 /* Styles for smaller screens */
@@ -151,7 +196,7 @@
     .mobiletoshowLogo {
         width: 100%;
         height: auto;
-        background-color: #f3e9b4; 
+        background-color: #f3e9b4;
         background-image: url("./Images/Grains.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -167,21 +212,30 @@
 
     .customcardtitle {
         font-size: 15px;
-        color: #E89725; 
+        color: #E89725;
     }
+
     .btnmyclass {
         display: block;
         margin-left: 70px;
         margin-right: 70px;
         font-size: 12px;
         background-color: #E89725;
-      }
+    }
 
-      .myclass {
+    .myclass {
         margin: 10px;
         max-width: 90%;
         padding: 10px;
         border-radius: 20px;
-      }
-      
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+    .image-slider {
+        margin: 0 auto;
+        width: 200px;
+        ;
+    }
 }
