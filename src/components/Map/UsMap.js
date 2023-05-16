@@ -372,7 +372,7 @@ export default function UsMap() {
                   {state === "Missouri" ? (
                     <image
                       style={{ position: "relative", top: "100px" }} //process.env.PUBLIC_URL +
-                      href="https://routezero-app-pn8r.vercel.app/img/car.png"
+                      href="https://rtzero.org/img/car.png"
                       x=" -32"
                       y=" -60"
                       width="55"
