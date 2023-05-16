@@ -1,5 +1,5 @@
 {
-  "homepage": "https://rtzero.org",
+  "homepage": "https://aubairakif1998.github.io/",
   "name": "routezero",
   "version": "0.1.0",
   "private": true,
@@ -16,9 +16,16 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
+    "react-image-gallery": "^1.2.11",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "react-simple-image-viewer": "^1.2.2",
     "react-simple-maps": "^3.0.0",
-    "web-vitals": "^2.1.4"
+    "react-slick": "^0.29.0",
+    "react-tooltip": "^5.11.2",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^3.7.0"
   },
   "scripts": {
     "predeploy": "npm run build",

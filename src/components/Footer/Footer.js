@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, CardContent, Button, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
+// import { Card, CardContent, Button, Typography } from "@mui/material";
+// import { styled } from "@mui/material/styles";
 import "./style.css";
 
 export default function Footer() {
