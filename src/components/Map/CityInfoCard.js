@@ -175,7 +175,17 @@ export default function CityInfoCard(props) {
             borderRadius: "20px",
           }}
         >
-          <img className="card-img-top" src={LALogo} alt="carddetail" />
+          {/* <img className="card-img-top" src={LALogo} alt="carddetail" /> */}
+          <iframe
+            src="https://player.vimeo.com/video/827442193?h=482758b9f1&autoplay=1"
+            maxWidth="320px"
+            height="200px"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            title="LA"
+          ></iframe>
+
           <div className="card-body">
             <h5
               className="card-title"

@@ -400,14 +400,15 @@ export default function UsMap() {
                     <text
                       fontStyle={{}}
                       textAnchor="middle"
-                      y={0}
+                      y={3}
                       style={{
                         fontFamily: "system-ui",
-                        fill: "#5D5A6D",
-                        fontSize: 24,
+                        fill: "black",
+                        fontSize: 30,
+                        color: "white",
                       }}
                     >
-                      ⭐
+                      ★
                     </text>
                   ) : state === "Baltimore, Maryland" ? (
                     <g
@@ -485,7 +486,16 @@ export default function UsMap() {
             <div className="card-container d-flex flex-wrap">
               {
                 <div className="card myclass">
-                  <img className="card-img-top" src={LALogo} alt="carddetail" />
+                  {/* <img className="card-img-top" src={LALogo} alt="carddetail" /> */}
+                  <iframe
+                    src="https://player.vimeo.com/video/827442193?h=482758b9f1&autoplay=1"
+                    width="100%"
+                    height="200px"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title="LA"
+                  ></iframe>
                   <div className="card-body">
                     <h5
                       className="card-title customcardtitle"
