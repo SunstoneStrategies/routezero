@@ -439,33 +439,6 @@ export default function UsMap() {
               </Marker>
             ))}
         </ComposableMap>
-        {/* {isMarkerClicked === "Santa Fe, NM" ? (
-          NMImages.map((src, index) => (
-            <GalleryPage
-              images={NMImages}
-              currentImage={index}
-              closeImageViewer={closeImageViewer}
-            />
-          ))
-        ) : isMarkerClicked === "Flagstaff, Arizona" ? (
-          AZ01Images.map((src, index) => (
-            <GalleryPage
-              images={AZ01Images}
-              currentImage={index}
-              closeImageViewer={closeImageViewer}
-            />
-          ))
-        ) : isMarkerClicked === "Joliet, IL" ? (
-          J1Images.map((src, index) => (
-            <GalleryPage
-              images={J1Images}
-              currentImage={index}
-              closeImageViewer={closeImageViewer}
-            />
-          ))
-        ) : (
-          <div></div>
-        )} */}
 
         {hoveredState !== "" ? (
           <CityInfoCard
@@ -549,7 +522,16 @@ export default function UsMap() {
             <div className="card-container d-flex flex-wrap">
               {
                 <div className="card myclass">
-                  <img className="card-img-top" src={KCLogo} alt="carddetail" />
+                  {/* <img className="card-img-top" src={KCLogo} alt="carddetail" /> */}
+                  <iframe
+                    src="https://player.vimeo.com/video/832408352?h=9fc0b6f61b&autoplay=1"
+                    maxWidth="320px"
+                    height="200px"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title="LA"
+                  ></iframe>
                   <div className="card-body">
                     <h5
                       className="card-title customcardtitle redColor"
