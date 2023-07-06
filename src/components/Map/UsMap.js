@@ -579,7 +579,16 @@ export default function UsMap() {
             <div className="card-container d-flex flex-wrap">
               {
                 <div className="card myclass">
-                  <img className="card-img-top" src={DMLogo} alt="carddetail" />
+                  {/* <img className="card-img-top" src={DMLogo} alt="carddetail" /> */}
+                  <iframe
+                    src="https://player.vimeo.com/video/840225230?h=9fc0b6f61b&autoplay=1"
+                    maxWidth="320px"
+                    height="200px"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title="LA"
+                  ></iframe>
                   <div className="card-body">
                     <h5
                       className="card-title customcardtitle"

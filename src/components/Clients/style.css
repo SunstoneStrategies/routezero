@@ -237,6 +237,30 @@
   position: relative;
 }
 
+.image28 {
+  background-image: url('./Images/A28.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.image29 {
+  background-image: url('./Images/A29.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.image30 {
+  background-image: url('./Images/A30.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
 .padding {
 
   background-color: rgb(185, 184, 184);

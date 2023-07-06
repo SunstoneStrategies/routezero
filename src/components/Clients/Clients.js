@@ -87,32 +87,38 @@ export default function Clients() {
           <Grid item xs={6} sm={3}>
             <Box className="image19" my={6} p={5}></Box>
           </Grid>
-          <Grid item xs={6} sm={3}>
+          {/* <Grid item xs={6} sm={3}>
             <Box className="image20 padding" my={6} p={6}></Box>
-          </Grid>
+          </Grid> */}
 
           <Grid item xs={6} sm={3}>
             <Box className="image25" my={6} p={5}></Box>
           </Grid>
-          <Grid item xs={6} sm={3.4}>
+          <Grid item xs={6} sm={3}>
             <Box className="image27" my={6} p={4.5}></Box>
           </Grid>
           <Grid item xs={6} sm={3}>
-            <Box className="image23" my={6} p={5}></Box>
+            <Box className="image23" my={6} p={6}></Box>
           </Grid>
-          <Grid item xs={6} sm={2.6}>
-            <Box className="image24" my={6} p={5}></Box>
+          <Grid item xs={6} sm={3}>
+            <Box className="image24" my={6} p={6}></Box>
           </Grid>
 
           <Grid item xs={6} sm={3}>
-            <Box className="image18" my={7} p={5}></Box>
+            <Box className="image18" my={5} p={7}></Box>
           </Grid>
-          <Grid item xs={6} sm={6}>
-            <Box className="image26" my={0} p={15}></Box>
+
+          <Grid item xs={6} sm={3}>
+            <Box className="image26" my={0} p={18}></Box>
           </Grid>
           <Grid item xs={6} sm={3}>
-            <Box className="image22" my={7} p={5}></Box>
+            <Box className="image22" my={7} p={8}></Box>
           </Grid>
+
+          <Grid item xs={6} sm={3}>
+            <Box className="image28" my={4} p={8}></Box>
+          </Grid>
+
           {/* 
           
          

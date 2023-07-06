@@ -1,5 +1,5 @@
 .App {
-  display: grid; 
+  display: grid;
 
   /* text-align: center; */
   /* row-gap: 1px;
@@ -73,19 +73,99 @@
 @media (max-width: 768px) {
   .bg1 {
     color: black;
-    width: 40%; 
-    height: 100vh;/* Adjust the width for smaller screens */
-    right:  52%; 
-    top: 14%; /* A/* Adjust the position from the right */
+    width: 40%;
+    height: 100vh;
+    /* Adjust the width for smaller screens */
+    right: 52%;
+    top: 14%;
+    /* A/* Adjust the position from the right */
   }
 }
 
 @media (max-width: 480px) {
   .bg1 {
-    width: 80%; /* Adjust the width for even smaller screens */
-    right: 2%; /* Adjust the position from the right */
-    top: 10px; /* Adjust the position from the top */
+    width: 80%;
+    /* Adjust the width for even smaller screens */
+    right: 2%;
+    /* Adjust the position from the right */
+    top: 10px;
+    /* Adjust the position from the top */
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.App {
+  display: grid;
+}
+
+.ticker-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: #f3e9b4;
+  
+  border-radius: 8px;
+  
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  z-index: 2;
  
+}
+
+
+.ticker-nav {
+  background-color: #f1f1f1;
+ 
+  padding: 10px;
+}
+
+.ticker {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  animation: ticker-animation 20s linear infinite;
+}
+
+.ticker-item {
+  display: inline-block;
+  padding: 0 10px;
+  color: #333;
+   
+  font-weight: bold;
+ 
+}
+
+.ticker-item::before {
+  content: "\2022";
+   
+  margin-right: 5px;
+  color: #689DAA;
+ 
+}
+
+@keyframes ticker-animation {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+} */
