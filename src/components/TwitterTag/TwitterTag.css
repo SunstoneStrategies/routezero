@@ -1,0 +1,25 @@
+
+
+.twitter-tag {
+    position: fixed;
+    top: 25rem;
+    z-index: 999; 
+    right: 2px;
+    background: transparent;
+    background-color: white;
+    height: 2rem;
+  }
+  
+  .twitter-tag p {
+    /* font-family: GinTest; */
+    font-size: medium;
+    font-weight: bolder;
+    color: #FFA800;
+    text-align: center;
+    padding: 4px;
+  }
+
+  .twitter-tag a {
+    text-decoration: none;
+  }
+  

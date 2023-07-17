@@ -9,12 +9,14 @@ import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Banner from "./components/Banner/Banner";
 import UsMap from "./components/Map/UsMap";
+import TwitterTag from "./components/TwitterTag/TwitterTag";
 
 function App() {
   return (
     <>
       <Header />
       <Slider />
+      <TwitterTag />
       <Banner />
       <UsMap />
       <Clients />

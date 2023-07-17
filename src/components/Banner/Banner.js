@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 
 export default function Banner() {
@@ -12,10 +11,9 @@ export default function Banner() {
           </h1>
         </div>
         <div className="divitem2-kid2">
-        <h3 className="subtitletext">RELAY</h3>
+          <h3 className="subtitletext">RELAY</h3>
         </div>
       </div>
     </div>
   );
 }
- 
