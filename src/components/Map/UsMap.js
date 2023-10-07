@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+import mapData from "../../mapData.json";
 import CityInfoCard from "./CityInfoCard";
 import LALogo from "./Images/LA.png";
 import KCLogo from "./Images/KC.png";
@@ -55,8 +57,9 @@ import {
 
 import MyCarousel from "./MyCarousel";
 
-const geoUrl =
-  "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/united-states/us-albers.json";
+// const geoUrl =
+//   "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/united-states/us-albers.json";
+const geoUrl = mapData;
 
 export default function UsMap() {
   const J1Images = [J1, J2, J3, J4, J5, J6, J7, J8, J9, J10, J11, J12, J13];
